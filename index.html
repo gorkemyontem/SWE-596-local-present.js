@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Local-present.js - SWE-596</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="box-inner">
+                <div id="overlay" class="hidden">
+                    <ul id="toc"></ul>
+                </div>
+                <div id="main-div"></div>
+            </div>
+            <hr>
+            <button class="button" id="tocBtn" onclick="renderTableOfContent()">Table of Content</button>
+            <button class="button" id="backBtn" onclick="renderBack()">Back</button>
+            <button class="button" id="prevBtn" onclick="renderPreviousPage()">&#8592; Previous Page</button>
+            <button class="button" id="nextBtn" onclick="renderNextPage()">Next Page &#8594;</button>
+            <hr>
+        </div>
+    </div>
+
+
+    <script src="js/courseStructure.js"></script>
+    <script src="js/linkedlist.js"></script>
+    <script src="js/courseController.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/historyController.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
