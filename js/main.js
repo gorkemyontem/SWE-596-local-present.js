@@ -64,6 +64,3 @@ function stateHandler(event) {
         }
     }
 }
-// back e basinca geri gelmek
-// conceptA nin sayfasinin icinde a href 2.sayfa var. ona gidip geri gelebilmek
-// ziple goster
