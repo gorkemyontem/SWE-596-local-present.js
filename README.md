@@ -6,6 +6,7 @@
 1. Table of Content (<kbd>ESC</kbd>)
 1. Back to the source (<kbd>Backspace</kbd>)
 1. Hypertext Reference handling 
+1. Doubly Linked List approach
 
 
 ## Javascript
@@ -20,6 +21,8 @@
 | historyController.js | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/historyController.js)           | Handles history change events             |
 
 ## Doubly Linked List Structure 
+
+![](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/docs/linkedlist.png "Linked List")
 
 ## Screenshots
 ![](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/docs/first-page.png "First Page")
