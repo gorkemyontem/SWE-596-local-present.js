@@ -18,3 +18,12 @@
 | linkedList.js        | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/linkedList.js)                  | Doubly linked list implementation in JS              |
 | renderer.js          | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/renderer.js)                    | Renders views and take cares of DOM changes            |
 | historyController.js | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/historyController.js)           | Handles history change events             |
+
+## Doubly Linked List Structure 
+
+## Screenshots
+![](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/docs/first-page.png "First Page")
+
+![](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/docs/second-page.png "Second Page")
+
+![](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/docs/toc-overlay.png "ToC Overlay Page")
