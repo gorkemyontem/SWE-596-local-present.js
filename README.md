@@ -7,6 +7,7 @@
 1. Back to the source (<kbd>Backspace</kbd>)
 1. Hypertext Reference handling
 1. Doubly Linked List approach
+1. Test Framework included
 
 
 ## Javascript
@@ -19,14 +20,26 @@
 | linkedList.js        | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/linkedList.js)                  | Doubly linked list implementation in JS              |
 | renderer.js          | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/renderer.js)                    | Renders views and take cares of DOM changes            |
 | historyController.js | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/historyController.js)           | Handles history change events             |
+| testify.js | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/testify.js)           | Test Framework             |
+| test.js | [link](https://github.com/gorkemyontem/SWE-596-local-present.js/blob/main/js/test.js)           | Test Runner             |
 
 ## Doubly Linked List Structure
 
 ![](/docs/linkedlist.png "Linked List")
 
-## Screenshots
+## App Screenshots
 ![](/docs/first-page.png "First Page")
 
 ![](/docs/second-page.png "Second Page")
 
 ![](/docs/toc-overlay.png "ToC Overlay Page")
+
+## Test Screenshots
+### Successful Test
+![](/docs/success-test.png "Successful Tests")
+
+### Partially Successful Test
+![](/docs/warning-test.png "Partially Successful Tests")
+
+### Full Error Test
+![](/docs/error-test.png "Full Error Tests")

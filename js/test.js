@@ -58,12 +58,25 @@ const testLastPrevSlide = function () {
     testify.assert("testLastPrevSlide", this.courseController.currentSlide.value, "==", this.correctOrder[this.correctOrder.length - 2]);
 }
 
+
+
+const testNegativeLastPrevSlide = function () {
+    this.courseController = new CourseController();
+    for (let i = 0; i < 100; i++) {
+        this.courseController.nextPage();
+    }
+    this.courseController.prevPage();
+    testify.assert("testNegativeLastPrevSlide", this.courseController.currentSlide.value, "!=", this.correctOrder[this.correctOrder.length - 1]);
+}
+
+
 const tests = [
             testFirstSlide,
             testSecondSlide,
             testLoopSlide,
             testLastSlide,
-            testLastPrevSlide
+            testLastPrevSlide,
+            testNegativeLastPrevSlide
         ];
 
 testify.runTests(tests)
