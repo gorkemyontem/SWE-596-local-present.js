@@ -15,6 +15,7 @@ function init(){
         renderer.renderIframe(courseController.currentSlide.value);
     }
 }
+
 function renderPreviousPage() {
     let page = courseController.prevPage();
     renderer.renderPrevPage(page);
