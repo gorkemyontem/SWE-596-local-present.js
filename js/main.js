@@ -7,10 +7,10 @@ document.addEventListener('keydown', keyHandler);
 window.onpopstate = stateHandler;
 
 function init(){
-    if (window.location.search) {
-        let page = window.location.search.replace("?page=", "");
+    if (window.location.search && window.location.search.startsWith('?page=course')) {
+        let pagePath = window.location.search.replace("?page=", "");
+        let page = courseController.findPage(pagePath);
         renderer.renderIframe(page);
-
     } else {
         renderer.renderIframe(courseController.currentSlide.value);
     }

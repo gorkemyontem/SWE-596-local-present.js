@@ -18,6 +18,22 @@ CourseController.prototype.createSyllabus = function(){
     return initLinkedListFromMap(this._presentations);
 }
 
+CourseController.prototype.findPage = function(page){
+    let concept = this.syllabus.head;
+    let i = 0;
+    while (i < 10) {
+        i++;
+        if(concept.value.pages.search(page) != null){
+            console.log(concept);
+            this.currentConcept = concept;
+            this.currentPages = this.currentConcept.value.pages;
+            this.currentSlide = this.currentConcept.value.pages.search(page);
+            return this.currentSlide.value;
+        }
+        concept = this.syllabus.next(concept)
+    }
+}
+
 CourseController.prototype.extractAllLessons = function(){
     let lessons = new Map();
     this.tableOfContent.forEach(el => lessons.set(el, getPagesOfLesson(el)));
@@ -99,6 +115,19 @@ CourseController.prototype.getSlideFromEnd = function(){
     return this.currentSlide.value;
 }
 
+// UTILS
+function initLinkedList(nodes){
+    var linkedList = new LinkedList();
+    nodes.forEach(node => linkedList.addToTail(node));
+    return linkedList;
+}
+
+function initLinkedListFromMap(nodes){
+    var linkedList = new LinkedList();
+    nodes.forEach((value, key) => linkedList.addToTail({ conceptName: key, pages: value}));
+    return linkedList;
+}
+
 function getPagesOfLesson(lessonName){
     var lesson = {}
     try {
@@ -134,16 +163,4 @@ function recursiveFlatter(paths){
 
 function addFolderName(paths){
     return paths.map(el => ("courseA" + "/" + el));
-}
-
-function initLinkedList(nodes){
-    var linkedList = new LinkedList();
-    nodes.forEach(node => linkedList.addToTail(node));
-    return linkedList;
-}
-
-function initLinkedListFromMap(nodes){
-    var linkedList = new LinkedList();
-    nodes.forEach((value, key) => linkedList.addToTail({ conceptName: key, pages: value}));
-    return linkedList;
 }
